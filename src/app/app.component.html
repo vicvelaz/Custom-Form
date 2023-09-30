@@ -1,0 +1,8 @@
+<form [formGroup]="form" (submit)="onSubmit()">
+  <app-custom-radio-button
+    formControlName="selectedOption"
+    [options]="radioOptions"
+  ></app-custom-radio-button>
+  <button type="submit">Submit</button>
+</form>
+<div>Selected Option: {{ form.get('selectedOption')?.value }}</div>
