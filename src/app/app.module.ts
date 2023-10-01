@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CustomRadioButtonComponent } from './custom-radio-button/custom-radio-button.component';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CustomRadioButtonComponent } from './custom-radio-button/custom-radio-b
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

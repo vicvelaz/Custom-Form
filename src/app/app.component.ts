@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -16,12 +16,13 @@ export class AppComponent {
 
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
-      selectedOption: '',
+      selectedOption: ['',[Validators.required]],
     });
   }
 
   onSubmit() {
-    console.log(this.form.value);
+    console.log("El formulario es válido: ", this.form.valid);
+    console.log("El valor del formulario es: ", this.form.value);
   }
 
 }
