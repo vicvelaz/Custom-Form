@@ -14,10 +14,17 @@ export class AppComponent {
     { value: 'option3', label: 'Option 3' },
   ];
 
+  mostrar = false;
+
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
       selectedOption: ['',[Validators.required]],
     });
+  }
+
+  switchMostrar() {
+    console.log("Mostrar: ", this.mostrar)
+    this.mostrar = !this.mostrar;
   }
 
   onSubmit() {

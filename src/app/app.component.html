@@ -6,3 +6,16 @@
   <button type="submit">Submit</button>
 </form>
 <div>Selected Option: {{ form.get('selectedOption')?.value }}</div>
+<hr>
+<h1>Prueba de titulos numerados</h1>
+<ol>
+  <li>Primer elemento</li>
+  <li>Segundo elemento</li>
+  <li *ngIf="mostrar">Segundo Segundo elemento</li>
+  <li>Tercer elemento</li>
+</ol>
+
+<button type="button" (click)="switchMostrar()">Pipipopu</button>
+<div>mostrar: {{mostrar}}</div>
+
+

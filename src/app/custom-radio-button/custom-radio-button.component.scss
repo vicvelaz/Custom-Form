@@ -1,6 +1,10 @@
 ::ng-deep .mdc-form-field > label {
-    color: black;
-    &:hover {
-       cursor: pointer;
-    }
+  color: black;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.red {
+  color: red;
 }

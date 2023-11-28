@@ -1,10 +1,11 @@
 <mat-radio-group *ngFor="let option of options">
-    <mat-radio-button
-      type="radio"
-      [value]="option.value"
-      [checked]="value === option.value"
-      (change)="onRadioChange(option.value)"
-    >
+  <mat-radio-button
+    type="radio"
+    [value]="option.value"
+    class="red"
+    [checked]="value === option.value"
+    (change)="onRadioChange(option.value)"
+  >
     {{ option.label }}
-    </mat-radio-button>
-  </mat-radio-group>
+  </mat-radio-button>
+</mat-radio-group>
